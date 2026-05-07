@@ -1,0 +1,116 @@
+/* 1. CSS VARIABLES (Custom Properties) */
+:root {
+    --primary-color:none 0;
+    --dark-bg: #1e293b;
+    --light-text: #010b15;
+    --gray-text: #64748b;
+    --bolu: #0059ff;
+    --card-shadow: 0 8px 12px -1px rgba(0, 0, 0, 0.1);
+    --padding-base: 2rem;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-bg);
+}
+
+/* 2. FLEXBOX: Navigation Layout */
+.navbar {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: var(--card-shadow);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark-bg);
+    font-weight: 500;
+}
+
+/* 3. RESPONSIVE HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: var(--primary-color);
+    color: var(--light-text);
+}
+
+.logo{
+    padding: 1rem;
+    font-family: Arial Black;
+    color: var(--bolu);
+    font-weight:300;
+    font-size: larger;
+}
+
+/* 4. CSS GRID: Features Section */
+.container {
+    text-decoration: none;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+}
+
+.features-grid {
+    display: grid;
+    /* Default: 1 column for mobile */
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card {
+    padding: var(--padding-base);
+    text-decoration: none;
+        background: rgb(215, 190, 166);
+    border-radius: 35px;
+    box-shadow: var(--card-shadow);
+    border-top: 4px solid var(--primary-color);
+}
+
+.btn-cta{
+    border-radius: 15px;
+    padding: 0.5rem 1.5rem;
+    background: var(--primary-color);
+    color: #000;
+    width: 200px;
+    height: 50px;
+    border-color: #0fd076;
+}
+
+/* 5. MEDIA QUERIES (Responsive Layout Structure) */
+
+/* Tablets */
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hero {
+        padding: 6rem 1rem;
+    }
+}
