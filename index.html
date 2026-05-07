@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=10">
-        <title> Class 2 - HTML Basics </title>
-    </head>
-    <body>
-        <h1> My first Real HTML Webpage</h1>
-        <p>This webpage contains multiple HTML elements such as links, images, tables and lists</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 5: Advanced CSS & Responsive Design</title>
+    <link rel="stylesheet" href="styleclass5.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">GloReL</div>
+            <ul class="nav-links">
+                <li><a href="https://content.digitallibrary.io/about-the-gdl/" style="text-decoration: none;">Home</a></li>
+                <li><a href="https://alison.com/course/" style="text-decoration: none;">Courses</a></li>
+                <li><a href="https://www.chapterone.org/uk/library" style="text-decoration: none;">About</a></li>
+                <li><a href="https://www.reading.ac.uk/library/contacts-support" style="text-decoration: none;">Contact</a></li>
+                <li><a href="https://readingagency.org.uk/our-work/" style="text-decoration: none;">Services</a></li>
+            </ul>
+            <a href="regform.html"><button class="btn-cta">Get Started</button></a>
+        </nav>
+    </header>
 
-          <h2> About me </h2>
-            <p> Hello world, I'm Elijah, a new developer in view. i'm going to be a strange developer wiht a lot of new things coming up in the tech space. Amen</p>
-            <img src="webimage/1.png" alt="webimage" width="200"> 
-       
-            <h2> 2a. My favorites Websites</h2>
-        
-        <ul>
-            <li><a href="https://google.com" target="_blank"> Google</a></li>
-            <li><a href="https://youtube.com" target="_blank">Youtube</a></li>
-                <li><a href="https://github.com" target="_blank"> Github</a></li>
-        </ul>
+    <section class="hero"> 
+        <img src="image/atlas.png" alt="Hero Image" width="%" height="auto"></img></a>
+           <a href="https://www.worldreader.org/" style="text-decoration: none;"><h1>GLOBAL READING LIBRARY</h1></a>
+        <p>Those who seek knowledge will find it here</p>
+    </section>
 
-        <h2> 3. My Weekly Study Plan </h2>
-        <ol>
-            <li>Learn HTML</li>
-            <li> Practice CSS</li>
-            <li> Study JavaScript</li>
-            <li> Work on Personal Projects</li>
-        </ol>
+    <main class="container">
+        <section class="features-grid">
+            <div class="card">
+                <img src="image/book2a.png" alt="Book Image" width="200" height="150"></img></a>
+         <a href="https://www.nature.com/" target="_blank" style="text-decoration: none;">Science Hall</a>
+                <p>The world of science and discovery</p>
+            </div>
+            <div class="card">
+                <img src="image/book1a.png" alt="Book Image" width="200" height="150"></img>
+                               <a href="https://www.goodreads.com/shelf/show/motivational" target="_blank" style="text-decoration: none;">Motivational Books</a>
+                <p>Inspire yourself with stories of success and perseverance.</p>
+            </div>
+            <div class="card">
+                <img src="image/book4a.png" alt="Book Image" width="200" height="150"></img>    
+              <a href="https://about.ebsco.com/products/research-databases/biography-reference-source" target="blank" style="text-decoration: none;">Biographies</a>
+                <p>Read the stories of inspiring lives and their journeys.</p>
+            </div>
+            <div class="card">
+                <img src="image/book5a.png" alt="Book Image" width="250" height="150"></img>
+                               <a href="https://www.codewars.com/" target="_blank" style="text-decoration: none;">Programming</a>
+                <p>Learn the fundamentals of programming with hands-on exercises.</p>
+            </div>
+            <div class="card">
+                <img src="image/book7.png" alt="Book Image" width="250" height="150"></img>
+    
+                <a href="https://cmoe.com/25-best-leadership-websites/" target="_blank" style="text-decoration: none;">Leadership and Influence</a>
+                <p>Develop your leadership skills and learn how to influence others effectively.</p>
+            </div>
+            <div class="card">
+                <img src="image/bible.png" alt="bible Image" width="250" height="150"></img>
+                <a href="https://www.biblegateway.com/" target="_blank" style="text-decoration: none;">The Bible</a>
+                <p>Your Word is a lamp unto my feet and a light unto my path.</p>
+            </div>
+        </section>
+    </main>
 
-        <h2>4. My Class Timetable</h2>
-        <table border="1" cellpadding="10">
-            <tr>
-                <th>Day</th>
-                <th>Subject</th>
-            </tr>
+    <footer>
+        <p>&copy; 2026 Advanced CSS Workshop</p>
+    </footer>
 
-            <tr>
-                <td>Monday</td>
-                <td>HTML Basics</td>
-            </tr>
-
-            <tr>
-                <td>Tuesday</td>
-                <td> CSS Introduction</td>
-            </tr>
-        </table>
-    </body>
+</body>
 </html>
